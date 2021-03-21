@@ -1,0 +1,80 @@
+:root{
+    --color-main: 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    /*height: 100vh;*/
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+img{
+    border-radius: 50%;
+    height: 60;
+    width: 60;
+}
+img:hover{
+    transform: scale(1.1);
+}
+#computaçao{
+    /* background-color: pink; */
+    margin-top: 5%;
+}
+#historia{
+    /* background-color: blue; */
+    margin-top: 5%;
+}
+#cpsuperior{
+    /* background-color: brown; */
+    height: 15%;
+    margin-bottom: 1%;
+    margin-left: 15%;
+    margin-top: 1%;
+    position: relative;
+}
+#cpinferior{
+    /* background-color: blueviolet; */
+    height: 15%;
+    margin-bottom: 1%;
+    position: relative;
+}
+#hisuperior{
+    /* background-color: brown; */
+    height: 15%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    position: relative;
+}
+#hiinferior{
+    /* background-color: blueviolet; */
+    height: 15%;
+    margin-bottom: 1%;
+    position: relative;
+}
+.elementosupcp{
+    float: left;
+    padding-left: 15%;
+    padding-top: 1%;
+}
+.elementoinfcp{
+    float: left;
+    padding-left: 15%;
+    padding-top: 1%;
+}
+.elementosuphi{
+    float: left;
+    padding-left: 8%;
+    padding-top: 1%;
+}
+.elementoinfhi{
+    float: left;
+    padding-left: 10%;
+    padding-top: 1%;
+}
