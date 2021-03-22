@@ -1,11 +1,12 @@
 <meta charset='UTF-8'>
+<html><meta charset='UTF-8'>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" href="est.css">
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -18,35 +19,38 @@
         <h1>Linha do Tempo da Ciência</h1>
     </header>
 
+    <div id="show">
+
+    </div>
+
     <div id="computaçao">
-
+        <div class="vertical"></div>
         <h4>Linha do tempo da computação</h4>       
-
         <div id="cpsuperior">
-            <div class="elementosupcp" id="elc1">
+            <div class="elementosupcp" id="elc1" onclick="show()">
                 <figure>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                     <figcaption id="nome">Albert Einstein</figcaption>
                     <figcaption>(1999-1999)</figcaption>
                 </figure>   
             </div>
-            <div class="elementosupcp" id="elc2">
+            <div class="elementosupcp" id="elc2" onclick="show()">
                 <figure>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                     <figcaption id="nome">Albert Einstein</figcaption>
                     <figcaption>(1999-1999)</figcaption>
                 </figure>
             </div>
-            <div class="elementosupcp" id="elc3">
+            <div class="elementosupcp" id="elc3" onclick="show()">
                 <figure>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                     <figcaption id="nome">Albert Einstein</figcaption>
                     <figcaption>(1999-1999)</figcaption>
                 </figure>
             </div>
-            <div class="elementosupcp" id="elc4">
+            <div class="elementosupcp" id="elc4" onclick="show()">
                 <figure>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                     <figcaption id="nome">Albert Einstein</figcaption>
                     <figcaption>(1999-1999)</figcaption>
                 </figure>
@@ -56,81 +60,83 @@
         <div id="meio"></div>
         
         <div id="cpinferior">
-            <div class="elementoinfcp" id="elc5">
+
+            <div class="elementoinfcp" id="elc5" onclick="show()">
                 <figure>
                     <figcaption>(1999-1999)</figcaption>
                     <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                 </figure>
             </div>
-            <div class="elementoinfcp" id="elc6">
+            <div class="elementoinfcp" id="elc6" onclick="show()">
                 <figure>
                     <figcaption>(1999-1999)</figcaption>
                     <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                 </figure>
             </div>
-            <div class="elementoinfcp" id="elc7">
+            <div class="elementoinfcp" id="elc7" onclick="show()">
                 <figure>
                     <figcaption>(1999-1999)</figcaption>
                     <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                 </figure>
             </div>
-            <div class="elementoinfcp" id="elc8">
+            <div class="elementoinfcp" id="elc8" onclick="show()">
                 <figure>
                     <figcaption>(1999-1999)</figcaption>
                     <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                 </figure>
             </div>
         </div>
+
     </div>
 
     <div id="historia">
-
+        <div class="vertical2"></div>
         <h4>Linha do tempo da ciência geral</h4>
 
 
         <div id="hisuperior">
-            <div class="elementosuphi" id="elh1">
+            <div class="elementosuphi" id="elh1" onclick="show()">
                 <figure>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                     <figcaption id="nome">Albert Einstein</figcaption>
                     <figcaption>(1999-1999)</figcaption>
                 </figure>
             </div>
-            <div class="elementosuphi" id="elh2">
+            <div class="elementosuphi" id="elh2" onclick="show()">
                 <figure>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                     <figcaption id="nome">Albert Einstein</figcaption>
                     <figcaption>(1999-1999)</figcaption>
                 </figure>
             </div>
-            <div class="elementosuphi" id="elh3">
+            <div class="elementosuphi" id="elh3" onclick="show()">
                 <figure>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                     <figcaption id="nome">Albert Einstein</figcaption>
                     <figcaption>(1999-1999)</figcaption>
                 </figure>
             </div>
-            <div class="elementosuphi" id="elh4">
+            <div class="elementosuphi" id="elh4" onclick="show()">
                 <figure>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                     <figcaption id="nome">Albert Einstein</figcaption>
                     <figcaption>(1999-1999)</figcaption>
                 </figure>
             </div>
-            <div class="elementosuphi" id="elh5">
+            <div class="elementosuphi" id="elh5" onclick="show()">
                 <figure>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                     <figcaption id="nome">Albert Einstein</figcaption>
                     <figcaption>(1999-1999)</figcaption>
                 </figure>
             </div>
-            <div class="elementosuphi" id="elh6">
+            <div class="elementosuphi" id="elh6" onclick="show()">
                 <figure>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                     <figcaption id="nome">Albert Einstein</figcaption>
                     <figcaption>(1999-1999)</figcaption>
                 </figure>
@@ -140,117 +146,50 @@
         <div id="meio"></div>
 
         <div id="hiinferior">
-            <div class="elementoinfhi" id="elh7">
+            <div class="elementoinfhi" id="elh7" onclick="show()">
                 <figure>
                     <figcaption>(1999-1999)</figcaption>
                     <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                 </figure>
             </div>
-            <div class="elementoinfhi" id="elh8">
+            <div class="elementoinfhi" id="elh8" onclick="show()">
                 <figure>
                     <figcaption>(1999-1999)</figcaption>
                     <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                 </figure>
             </div>
-            <div class="elementoinfhi" id="elh9">
+            <div class="elementoinfhi" id="elh9" onclick="show()">
                 <figure>
                     <figcaption>(1999-1999)</figcaption>
                     <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                 </figure>
             </div>
-            <div class="elementoinfhi" id="elh10">
+            <div class="elementoinfhi" id="elh10" onclick="show()">
                 <figure>
                     <figcaption>(1999-1999)</figcaption>
                     <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                 </figure>
             </div>
-            <div class="elementoinfhi" id="elh11">
+            <div class="elementoinfhi" id="elh11" onclick="show()">
                 <figure>
                     <figcaption>(1999-1999)</figcaption>
                     <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                 </figure>
             </div>
-            <div class="elementoinfhi" id="elh12">
+            <div class="elementoinfhi" id="elh12" onclick="show()">
                 <figure>
                     <figcaption>(1999-1999)</figcaption>
                     <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="./imgs/lin-img1.png">
+                    <img id="img1" src="img1.png">
                 </figure>
             </div>
         </div>
         
     </div>
 
-
-    <div hidden id="meuCarrossel" class="carousel slide container" data-bs-ride="carousel">
-        <div class="control">
-          <a class="carousel-control-prev" href="#meuCarrossel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </a>
-    
-          <a class="carousel-control-next" href="#meuCarrossel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </a>
-  
-          <ul class="carousel-indicators">
-            <li data-bs-target="#meuCarrossel" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#meuCarrossel" data-bs-slide-to="1"></li>
-            <li data-bs-target="#meuCarrossel" data-bs-slide-to="2"></li>
-            <li data-bs-target="#meuCarrossel" data-bs-slide-to="3"></li>
-            <li data-bs-target="#meuCarrossel" data-bs-slide-to="4"></li>
-            <li data-bs-target="#meuCarrossel" data-bs-slide-to="5"></li>
-            <li data-bs-target="#meuCarrossel" data-bs-slide-to="6"></li>
-            <li data-bs-target="#meuCarrossel" data-bs-slide-to="7"></li>
-            <li data-bs-target="#meuCarrossel" data-bs-slide-to="8"></li>
-          </ul>
-        </div>
-    
-        <div class="carousel-inner">
-            
-            <div class="carousel-item active">
-              <img class="d-block" width="100%" height="100%" src="img1.png" alt="">
-            </div>
-    
-            <div class="carousel-item">
-              <img class="d-block" width="100%" height="100%" src="https://i.pinimg.com/originals/d5/b0/1e/d5b01e59674b1dfc9ed4a59427ee13e7.jpg" alt="">
-            </div>
-    
-            <div class="carousel-item">
-              <img class="d-block" width="100%" height="100%" src="https://i2.wp.com/i.pinimg.com/originals/47/f9/8b/47f98b5d531ace6c88e2180a7f80d4d3.jpg" alt="">
-            </div>
-  
-            <div class="carousel-item">
-              <img class="d-block" width="100%" height="100%" src="https://i.pinimg.com/originals/18/d6/ed/18d6ed4ed83ae142c9546a5d603e97f6.jpg" alt="">
-            </div>
-    
-            <div class="carousel-item">
-              <img class="d-block" width="100%" height="100%" src="https://i.pinimg.com/originals/d5/b0/1e/d5b01e59674b1dfc9ed4a59427ee13e7.jpg" alt="">
-            </div>
-    
-            <div class="carousel-item">
-              <img class="d-block" width="100%" height="100%" src="https://i2.wp.com/i.pinimg.com/originals/47/f9/8b/47f98b5d531ace6c88e2180a7f80d4d3.jpg" alt="">
-            </div>
-    
-            <div class="carousel-item">
-              <img class="d-block" width="100%" height="100%" src="https://i.pinimg.com/originals/18/d6/ed/18d6ed4ed83ae142c9546a5d603e97f6.jpg" alt="">
-            </div>
-    
-            <div class="carousel-item">
-              <img class="d-block" width="100%" height="100%" src="https://i.pinimg.com/originals/d5/b0/1e/d5b01e59674b1dfc9ed4a59427ee13e7.jpg" alt="">
-            </div>
-    
-            <div class="carousel-item">
-              <img class="d-block" width="100%" height="100%" src="https://i2.wp.com/i.pinimg.com/originals/47/f9/8b/47f98b5d531ace6c88e2180a7f80d4d3.jpg" alt="">
-            </div>
-          </div>
-        </div>
-    </div>
-
-
 </body>    
-</html>
