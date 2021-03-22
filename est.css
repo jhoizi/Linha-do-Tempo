@@ -96,6 +96,20 @@ figcaption#nome{
     padding-left: 8%;
     padding-top: 1%;
 }
+#slides{
+    background-color: rgb(76, 0, 255);
+    visibility: hidden;
+    position: fixed;
+    height: 90%;
+    width: 90%;
+    margin-top: -1%;
+    margin-left: 5%;
+}
+#icon{
+    float: right;
+    width: 30;
+    height: 30;
+}
 
 @media screen and (max-width: 450px){
     #cpsuperior{

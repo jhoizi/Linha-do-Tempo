@@ -14,45 +14,46 @@
     <title>Linha do Tempo da Ciência</title>
 </head>
 
-<body>
+<body onload="iniciar()">
     <header>
         <h1>Linha do Tempo da Ciência</h1>
     </header>
 
-    <div id="show">
-
+    <div id="slides">
+        <img id="icon" onclick="voltar()" src="imgs/icon-sair.png"></img>
+        <p id="texto"></p>
     </div>
 
     <div id="computaçao">
         <div class="vertical"></div>
         <h4>Linha do tempo da computação</h4>       
         <div id="cpsuperior">
-            <div class="elementosupcp" id="elc1" onclick="show()">
+            <div class="elementosupcp" id="elc1" onclick="show(0)">
                 <figure>
-                    <img id="img1" src="img1.png">
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <figcaption>(1999-1999)</figcaption>
+                    <img id="img1">
+                    <figcaption id="nome1">Albert Einstein</figcaption>
+                    <figcaption id="data1">(1999-1999)</figcaption>
                 </figure>   
             </div>
-            <div class="elementosupcp" id="elc2" onclick="show()">
+            <div class="elementosupcp" id="elc2" onclick="show(1)">
                 <figure>
-                    <img id="img1" src="img1.png">
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <figcaption>(1999-1999)</figcaption>
+                    <img id="img2">
+                    <figcaption id="nome2">Albert Einstein</figcaption>
+                    <figcaption id="data2">(1999-1999)</figcaption>
                 </figure>
             </div>
-            <div class="elementosupcp" id="elc3" onclick="show()">
+            <div class="elementosupcp" id="elc3" onclick="show(2)">
                 <figure>
-                    <img id="img1" src="img1.png">
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <figcaption>(1999-1999)</figcaption>
+                    <img id="img3">
+                    <figcaption id="nome3">Albert Einstein</figcaption>
+                    <figcaption id="data3">(1999-1999)</figcaption>
                 </figure>
             </div>
-            <div class="elementosupcp" id="elc4" onclick="show()">
+            <div class="elementosupcp" id="elc4" onclick="show(3)">
                 <figure>
-                    <img id="img1" src="img1.png">
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <figcaption>(1999-1999)</figcaption>
+                    <img id="img4">
+                    <figcaption id="nome4">Albert Einstein</figcaption>
+                    <figcaption id="data4">(1999-1999)</figcaption>
                 </figure>
             </div>
         </div>
@@ -61,32 +62,32 @@
         
         <div id="cpinferior">
 
-            <div class="elementoinfcp" id="elc5" onclick="show()">
+            <div class="elementoinfcp" id="elc5" onclick="show(4)">
                 <figure>
-                    <figcaption>(1999-1999)</figcaption>
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="img1.png">
+                    <figcaption id="data5">(1999-1999)</figcaption>
+                    <figcaption id="nome5">Albert Einstein</figcaption>
+                    <img id="img5">
                 </figure>
             </div>
-            <div class="elementoinfcp" id="elc6" onclick="show()">
+            <div class="elementoinfcp" id="elc6" onclick="show(5)">
                 <figure>
-                    <figcaption>(1999-1999)</figcaption>
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="img1.png">
+                    <figcaption id="data6">(1999-1999)</figcaption>
+                    <figcaption id="nome6">Albert Einstein</figcaption>
+                    <img id="img6">
                 </figure>
             </div>
-            <div class="elementoinfcp" id="elc7" onclick="show()">
+            <div class="elementoinfcp" id="elc7" onclick="show(6)">
                 <figure>
-                    <figcaption>(1999-1999)</figcaption>
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="img1.png">
+                    <figcaption id="data7">(1999-1999)</figcaption>
+                    <figcaption id="nome7">Albert Einstein</figcaption>
+                    <img id="img7">
                 </figure>
             </div>
-            <div class="elementoinfcp" id="elc8" onclick="show()">
+            <div class="elementoinfcp" id="elc8" onclick="show(7)">
                 <figure>
-                    <figcaption>(1999-1999)</figcaption>
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="img1.png">
+                    <figcaption id="data8">(1999-1999)</figcaption>
+                    <figcaption id="nome8">Albert Einstein</figcaption>
+                    <img id="img8">
                 </figure>
             </div>
         </div>
@@ -99,46 +100,46 @@
 
 
         <div id="hisuperior">
-            <div class="elementosuphi" id="elh1" onclick="show()">
+            <div class="elementosuphi" id="elh1" onclick="show(8)">
                 <figure>
-                    <img id="img1" src="img1.png">
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <figcaption>(1999-1999)</figcaption>
+                    <img id="img9">
+                    <figcaption id="nome9">Albert Einstein</figcaption>
+                    <figcaption id="data9">(1999-1999)</figcaption>
                 </figure>
             </div>
-            <div class="elementosuphi" id="elh2" onclick="show()">
+            <div class="elementosuphi" id="elh2" onclick="show(9)">
                 <figure>
-                    <img id="img1" src="img1.png">
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <figcaption>(1999-1999)</figcaption>
+                    <img id="img10">
+                    <figcaption id="nome10">Albert Einstein</figcaption>
+                    <figcaption id="data10">(1999-1999)</figcaption>
                 </figure>
             </div>
-            <div class="elementosuphi" id="elh3" onclick="show()">
+            <div class="elementosuphi" id="elh3" onclick="show(10)">
                 <figure>
-                    <img id="img1" src="img1.png">
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <figcaption>(1999-1999)</figcaption>
+                    <img id="img11">
+                    <figcaption id="nome11">Albert Einstein</figcaption>
+                    <figcaption id="data11">(1999-1999)</figcaption>
                 </figure>
             </div>
-            <div class="elementosuphi" id="elh4" onclick="show()">
+            <div class="elementosuphi" id="elh4" onclick="show(11)">
                 <figure>
-                    <img id="img1" src="img1.png">
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <figcaption>(1999-1999)</figcaption>
+                    <img id="img12">
+                    <figcaption id="nome12">Albert Einstein</figcaption>
+                    <figcaption id="data12">(1999-1999)</figcaption>
                 </figure>
             </div>
-            <div class="elementosuphi" id="elh5" onclick="show()">
+            <div class="elementosuphi" id="elh5" onclick="show(12)">
                 <figure>
-                    <img id="img1" src="img1.png">
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <figcaption>(1999-1999)</figcaption>
+                    <img id="img13">
+                    <figcaption id="nome13">Albert Einstein</figcaption>
+                    <figcaption id="data13">(1999-1999)</figcaption>
                 </figure>
             </div>
-            <div class="elementosuphi" id="elh6" onclick="show()">
+            <div class="elementosuphi" id="elh6" onclick="show(13)">
                 <figure>
-                    <img id="img1" src="img1.png">
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <figcaption>(1999-1999)</figcaption>
+                    <img id="img14">
+                    <figcaption id="nome14">Albert Einstein</figcaption>
+                    <figcaption id="data14">(1999-1999)</figcaption>
                 </figure>
             </div>
         </div>
@@ -146,46 +147,46 @@
         <div id="meio"></div>
 
         <div id="hiinferior">
-            <div class="elementoinfhi" id="elh7" onclick="show()">
+            <div class="elementoinfhi" id="elh7" onclick="show(14)">
                 <figure>
-                    <figcaption>(1999-1999)</figcaption>
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="img1.png">
+                    <figcaption id="data15">(1999-1999)</figcaption>
+                    <figcaption id="nome15">Albert Einstein</figcaption>
+                    <img id="img15">
                 </figure>
             </div>
-            <div class="elementoinfhi" id="elh8" onclick="show()">
+            <div class="elementoinfhi" id="elh8" onclick="show(15)">
                 <figure>
-                    <figcaption>(1999-1999)</figcaption>
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="img1.png">
+                    <figcaption id="data16">(1999-1999)</figcaption>
+                    <figcaption id="nome16">Albert Einstein</figcaption>
+                    <img id="img16">
                 </figure>
             </div>
-            <div class="elementoinfhi" id="elh9" onclick="show()">
+            <div class="elementoinfhi" id="elh9" onclick="show(16)">
                 <figure>
-                    <figcaption>(1999-1999)</figcaption>
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="img1.png">
+                    <figcaption id="data17">(1999-1999)</figcaption>
+                    <figcaption id="nome17">Albert Einstein</figcaption>
+                    <img id="img17">
                 </figure>
             </div>
-            <div class="elementoinfhi" id="elh10" onclick="show()">
+            <div class="elementoinfhi" id="elh10" onclick="show(17)">
                 <figure>
-                    <figcaption>(1999-1999)</figcaption>
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="img1.png">
+                    <figcaption id="data18">(1999-1999)</figcaption>
+                    <figcaption id="nome18">Albert Einstein</figcaption>
+                    <img id="img18">
                 </figure>
             </div>
-            <div class="elementoinfhi" id="elh11" onclick="show()">
+            <div class="elementoinfhi" id="elh11" onclick="show(18)">
                 <figure>
-                    <figcaption>(1999-1999)</figcaption>
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="img1.png">
+                    <figcaption id="data19">(1999-1999)</figcaption>
+                    <figcaption id="nome19">Albert Einstein</figcaption>
+                    <img id="img19">
                 </figure>
             </div>
-            <div class="elementoinfhi" id="elh12" onclick="show()">
+            <div class="elementoinfhi" id="elh12" onclick="show(19)">
                 <figure>
-                    <figcaption>(1999-1999)</figcaption>
-                    <figcaption id="nome">Albert Einstein</figcaption>
-                    <img id="img1" src="img1.png">
+                    <figcaption id="data20">(1999-1999)</figcaption>
+                    <figcaption id="nome20">Albert Einstein</figcaption>
+                    <img id="img20">
                 </figure>
             </div>
         </div>
