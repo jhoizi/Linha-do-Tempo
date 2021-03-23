@@ -110,6 +110,15 @@ figcaption#nome{
     width: 30;
     height: 30;
 }
+#imgci{
+    width: 70%;
+    height: 70%;
+    margin-left: 15%;
+    border-radius: 0%;
+}
+#imgci:hover{
+    transform: scale(1.0);
+}
 
 @media screen and (max-width: 450px){
     #cpsuperior{
