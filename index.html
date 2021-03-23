@@ -1,20 +1,16 @@
-<meta charset='UTF-8'>
-<html><meta charset='UTF-8'>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="est.css">
+    <link rel="stylesheet" href="estilo.css">
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" defer crossorigin="anonymous"></script>
     <title>Linha do Tempo da Ciência</title>
 </head>
 
-<body onload="iniciar()">
+<body onload="iniciar()" onresize="iniciar()">
     <header>
         <h1>Linha do Tempo da Ciência</h1>
     </header>
@@ -28,7 +24,7 @@
 
     <div id="computaçao">
         <div class="vertical"></div>
-        <h4>Linha do tempo da computação</h4>       
+        <h3>Linha do tempo da computação</h3>       
         <div id="cpsuperior">
             <div class="elementosupcp" id="elc1" onclick="show(0)">
                 <figure>
@@ -98,7 +94,7 @@
 
     <div id="historia">
         <div class="vertical2"></div>
-        <h4>Linha do tempo da ciência geral</h4>
+        <h3>Linha do tempo da ciência geral</h3>
 
 
         <div id="hisuperior">
@@ -191,8 +187,12 @@
                     <img id="img20">
                 </figure>
             </div>
-        </div>
-        
+        </div>  
     </div>
 
-</body>    
+    <footer>
+        <span>Linha do Tempo Ciência &copy;</span>
+    </footer>
+
+</body>  
+</html>  
