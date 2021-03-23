@@ -14,12 +14,18 @@ function iniciar(){
 }
 
 function show(id){
+    var tel = screen.width;
+    console.log(tel);
     var sli = document.getElementById("slides");
     var tela = document.body;
     var texto = document.getElementById("texto");
     var titulo = document.getElementById("titulo");
     var img = document.getElementById("imgci");
-    da = infos();
+    if(tel > 450){
+        da = infos(1);        
+    }else{
+        da = infos(2);
+    }
     
     sli.style.visibility = "visible";
     tela.style.visibility = "hidden";
