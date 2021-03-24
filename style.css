@@ -81,10 +81,29 @@ figcaption#nome{
     }
 }
 #meio{
+    width: 100%;
     margin-top: 2%;
     border-right: 2%;
     border-style: dashed;
     border-color: black;
+    animation: meio 2s linear;
+}
+@keyframes meio{
+    0%{
+        width: 0%;
+    }
+    25%{
+        width: 25%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 75%;
+    }
+    100%{
+        width: 100%;
+    }
 }
 #computaçao{
     /* background-color: pink;  */
@@ -184,12 +203,15 @@ figcaption#nome{
         margin-right: 1rem;
         text-align: justify;
     }
+    .mobileh3{
+        margin-top: 4rem;
+    }
     #slides{
         background-color: rgba(0, 0, 0, 0.7);
         border-radius: 2%;
         visibility: hidden;
         position: fixed;
-        height: 80%;
+        height: 100%;
         width: 80%;
         color: aliceblue;
         top: 2rem;
@@ -240,6 +262,41 @@ figcaption#nome{
         margin-top: 13%;
         height: 135vh;
         position: absolute;
+        animation: vert 2s linear;
+    }
+    @keyframes vert {
+        0%{
+            height: 10vh;
+        }
+        25%{
+            height: 50vh;
+        }
+        50%{
+            height: 75vh;
+        }
+        75%{
+            height: 100vh;
+        }
+        100%{
+            height: 135vh;
+        }
+    }
+    @keyframes vert2 {
+        0%{
+            height: 10vh;
+        }
+        25%{
+            height: 70vh;
+        }
+        50%{
+            height: 120vh;
+        }
+        75%{
+            height: 180vh;
+        }
+        100%{
+            height: 205vh;
+        }
     }
     .vertical2{
         border-right: 3px dashed black;
@@ -247,6 +304,7 @@ figcaption#nome{
         margin-top: 13%;
         height: 205vh;
         position: absolute;
+        animation: vert2 2s linear;
     }
     #elc1{
         grid-column: 1;
@@ -334,13 +392,66 @@ figcaption#nome{
     #meio{
         visibility: hidden;
     }
+
+    footer{
+        display: block;
+        width: 100%;
+        height: 75vh;
+        display: block;
+    }
+    .equipe{
+        width: 150px;
+        margin-top: 20%;
+    }
+    .referencias{
+        width: 150px;
+        margin-top: 15%;
+        margin-left: 40%;
+        position: absolute;
+    }
+    .ficheiro{
+        float: left;
+        position: absolute;
+        margin-top: 72%;
+    }
+    .footerh3{
+        position: absolute;
+        width: 300px;
+    }
 }
 footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1);
+    grid-template-rows: repeat(2, 68%);
     margin-top: 2rem;
     padding: 2.5rem;
-    text-align: center;
     box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
     color: black;
     font-size: 1rem;
     font-weight: 400;
+}
+.ficheiro{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.ficheiro img{
+    border-radius: 0;
+    width: 300px;
+    height: 100px;
+    cursor: auto;
+    transform: none;
+}
+.referencias{
+    justify-content: space-around;
+}
+
+.footerh3{
+    grid-column: 2;
+    grid-row: 2;
+    margin: auto;
+}
+
+footer p{
+    font-weight: 300;
 }
