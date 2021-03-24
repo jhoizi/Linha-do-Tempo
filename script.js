@@ -37,8 +37,10 @@ function show(id){
 function voltar(){
     var sli = document.getElementById("slides");
     var tela = document.body;
+    var img = document.getElementById("imgci");
     sli.style.visibility = "hidden";
     tela.style.visibility = "visible";
+    img.setAttribute('src', "");
 }
 function infos(d){
     var dados1 = {4 : {nome_autor : "Ada Lovelace", texto : "Ela criou um algoritmo para calcular a sequência de Bernoulli, uma dada sequência de números racionais, o algoritmo teria funcionado se a máquina de Babbage tivesse realmente sido construída, mas o projeto somente foi concluído em 2002, pelo Museu da História do Computador, em Londres.", periodo : "(1815-1852)", img : "./imgs/lin-img1.jpg", img1 : "./imgs/mur-img1.jpg"},
