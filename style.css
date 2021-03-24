@@ -168,9 +168,9 @@ figcaption#nome{
     border-radius: 2%;
     visibility: hidden;
     position: fixed;
-    height: 80%;
+    height: 95%;
     width: 80%;
-    margin-top: -1%;
+    margin-top: -5%;
     margin-left: 10%;
     color: aliceblue;
 }
