@@ -165,12 +165,12 @@ figcaption#nome{
 }
 #slides{
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 2%;
+    border-radius: .25rem;
     visibility: hidden;
     position: fixed;
-    height: 95%;
+    height: 80%;
     width: 80%;
-    margin-top: -5%;
+    margin-top: -1%;
     margin-left: 10%;
     color: aliceblue;
 }
@@ -396,23 +396,25 @@ figcaption#nome{
     footer{
         display: block;
         width: 100%;
-        height: 75vh;
+        height: 300vh;
         display: block;
     }
     .equipe{
         width: 150px;
         margin-top: 20%;
+        margin-left: -1rem;
     }
     .referencias{
-        width: 150px;
+        width: 200px;
         margin-top: 15%;
-        margin-left: 40%;
+        margin-left: 35%;
         position: absolute;
+        overflow: hidden;
     }
     .ficheiro{
         float: left;
         position: absolute;
-        margin-top: 75%;
+        margin-top: 275vh;
     }
     .footerh3{
         position: absolute;
