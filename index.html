@@ -1,258 +1,119 @@
+<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width">
+    <title>Aglomerômetro</title>
+   <link rel="icon" href="src/icon.png">
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
-    <link rel="icon" href="./imgs/icon-history.png">
-    <title>Linha do Tempo da Ciência</title>
-</head>
-
-<body onload="iniciar()" onresize="iniciar()">
-    <header>
-        <h1>Linha do Tempo da Ciência</h1>
-        <div class="lin"></div>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="src/icon.png">
+        <h1>Aglomerômetro</h1>
+      </div>
+      <nav>
+        <ul class="menu">
+          <a href="#home"><li>Home</li></a>
+          <a href="#sobre"><li>Sobre</li></a>
+          <a href="#contato"><li>Contato</li></a>
+        </ul>
+      </nav>
     </header>
 
-    <div id="slides">
-        <img id="icon" onclick="voltar()" src="imgs/icon-sair.png"></img>
-        <img id="imgci">
-        <h2 id="titulo"></h2>
-        <p id="texto"></p>
-    </div>
+    <main>
+      <section class="lista">
+        <table>
+          <tr>
+            <th>Estabelecimentos</th>
+          </tr>
+          
+          <tr>
+            <td onclick="abrir_tela(0);">SupermerCaju</td>
+          </tr>
 
-    <div id="computaçao">
-        <div class="vertical"></div>
-        <h3 class="mobileh3">Linha do tempo da computação</h3>       
-        <div id="cpsuperior">
-            <div class="elementosupcp" id="elc1" onclick="show(0)">
-                <figure>
-                    <img id="img1">
-                    <figcaption id="nome1">Albert Einstein</figcaption>
-                    <figcaption id="data1">(1999-1999)</figcaption>
-                </figure>   
-            </div>
-            <div class="elementosupcp" id="elc2" onclick="show(1)">
-                <figure>
-                    <img id="img2">
-                    <figcaption id="nome2">Albert Einstein</figcaption>
-                    <figcaption id="data2">(1999-1999)</figcaption>
-                </figure>
-            </div>
-            <div class="elementosupcp" id="elc3" onclick="show(2)">
-                <figure>
-                    <img id="img3">
-                    <figcaption id="nome3">Albert Einstein</figcaption>
-                    <figcaption id="data3">(1999-1999)</figcaption>
-                </figure>
-            </div>
-            <div class="elementosupcp" id="elc4" onclick="show(3)">
-                <figure>
-                    <img id="img4">
-                    <figcaption id="nome4">Albert Einstein</figcaption>
-                    <figcaption id="data4">(1999-1999)</figcaption>
-                </figure>
-            </div>
+          <tr>
+            <td onclick="abrir_tela(1);">Nagy Confecções</td>
+          </tr>
+          
+          <tr>
+            <td onclick="abrir_tela(2);">Zé's Bar e Restaurante</td>
+          </tr>
+
+          <tr>
+            <td onclick="abrir_tela(3);">Churrascaria do Beto</td>
+          </tr>
+
+          <tr>
+            <td onclick="abrir_tela(4);">Caju's Mall</td>
+          </tr>
+
+        </table>
+      
+      </section>
+
+      <section class="informacoes">
+        <div class="info">
+          <h2>Informações</h2>
+          <p>
+            Este site proporciona o acompanhamento, em tempo real, do nível de aglomeração dos estabelecimentos 
+            que utilizam o sistema de gerenciamento da quantidade de pessoas em suas depêndencia: Aglomerômetro.
+          </p>
+              
+          <p>
+            Com esse sistema, as pessoas podem verificar a quantidade de pessoas presentes nos estabelecimentos e, 
+            assim, decidir a melhor hora de se deslocar ao estabelecimento, considerando o nível de aglomeração atual.
+          </p>
         </div>
+      </section>  
         
-        <div id="meio"></div>
-        
-        <div id="cpinferior">
+      <div id="estabelecimento">
+        <h2 id="nome">Nome do estabelecimento</h2>
+        <p id="area"></p>
+        <p id="funcionarios"></p>
+        <p id="presentes"></p>
+        <p id="capacidade"></p>
+        <p id="situacao"></p>
+        <img id="bt" onclick="fechar_tela();" src="src/icon-sair.png">
+      </div>
 
-            <div class="elementoinfcp" id="elc5" onclick="show(4)">
-                <figure>
-                    <figcaption id="data5">(1999-1999)</figcaption>
-                    <figcaption id="nome5">Albert Einstein</figcaption>
-                    <img id="img5">
-                </figure>
-            </div>
-            <div class="elementoinfcp" id="elc6" onclick="show(5)">
-                <figure>
-                    <figcaption id="data6">(1999-1999)</figcaption>
-                    <figcaption id="nome6">Albert Einstein</figcaption>
-                    <img id="img6">
-                </figure>
-            </div>
-            <div class="elementoinfcp" id="elc7" onclick="show(6)">
-                <figure>
-                    <figcaption id="data7">(1999-1999)</figcaption>
-                    <figcaption id="nome7">Albert Einstein</figcaption>
-                    <img id="img7">
-                </figure>
-            </div>
-            <div class="elementoinfcp" id="elc8" onclick="show(7)">
-                <figure>
-                    <figcaption id="data8">(1999-1999)</figcaption>
-                    <figcaption id="nome8">Albert Einstein</figcaption>
-                    <img id="img8">
-                </figure>
-            </div>
-        </div>
-
+    </main>
+    <div class="about" id="sobre">
+      <h2>Sobre</h2>
+      <p>Sistema de gerenciamento de aglomeração de estabelecimentos: Aglomerômetro.</p>
+      <p>
+        Este sistema visa controlar a quantidade de pessoas no interior dos estabelecimentos
+        a fim de promover a segurança das pessoas, assegurando que possam manter o
+        distanciamento seguro.   
+      </p>
+      <p>
+        Por meio da leitura de sensores e câmeras de seguranças dispostos nas instalações dos 
+        estabelecimentos, o sistema de gerenciamento mantém o controle da quantidade de pessoas 
+        que entram e saem do estabelecimento. Classificando assim, os níveis de aglomeração de
+        acordo com a capacidade do estabelecimento.  
+      </p>
     </div>
-
-    <div id="historia">
-        <div class="vertical2"></div>
-        <h3>Linha do tempo da ciência geral</h3>
-
-
-        <div id="hisuperior">
-            <div class="elementosuphi" id="elh1" onclick="show(8)">
-                <figure>
-                    <img id="img9">
-                    <figcaption id="nome9">Albert Einstein</figcaption>
-                    <figcaption id="data9">(1999-1999)</figcaption>
-                </figure>
-            </div>
-            <div class="elementosuphi" id="elh2" onclick="show(9)">
-                <figure>
-                    <img id="img10">
-                    <figcaption id="nome10">Albert Einstein</figcaption>
-                    <figcaption id="data10">(1999-1999)</figcaption>
-                </figure>
-            </div>
-            <div class="elementosuphi" id="elh3" onclick="show(10)">
-                <figure>
-                    <img id="img11">
-                    <figcaption id="nome11">Albert Einstein</figcaption>
-                    <figcaption id="data11">(1999-1999)</figcaption>
-                </figure>
-            </div>
-            <div class="elementosuphi" id="elh4" onclick="show(11)">
-                <figure>
-                    <img id="img12">
-                    <figcaption id="nome12">Albert Einstein</figcaption>
-                    <figcaption id="data12">(1999-1999)</figcaption>
-                </figure>
-            </div>
-            <div class="elementosuphi" id="elh5" onclick="show(12)">
-                <figure>
-                    <img id="img13">
-                    <figcaption id="nome13">Albert Einstein</figcaption>
-                    <figcaption id="data13">(1999-1999)</figcaption>
-                </figure>
-            </div>
-            <div class="elementosuphi" id="elh6" onclick="show(13)">
-                <figure>
-                    <img id="img14">
-                    <figcaption id="nome14">Albert Einstein</figcaption>
-                    <figcaption id="data14">(1999-1999)</figcaption>
-                </figure>
-            </div>
-        </div>
-        
-        <div id="meio"></div>
-
-        <div id="hiinferior">
-            <div class="elementoinfhi" id="elh7" onclick="show(14)">
-                <figure>
-                    <figcaption id="data15">(1999-1999)</figcaption>
-                    <figcaption id="nome15">Albert Einstein</figcaption>
-                    <img id="img15">
-                </figure>
-            </div>
-            <div class="elementoinfhi" id="elh8" onclick="show(15)">
-                <figure>
-                    <figcaption id="data16">(1999-1999)</figcaption>
-                    <figcaption id="nome16">Albert Einstein</figcaption>
-                    <img id="img16">
-                </figure>
-            </div>
-            <div class="elementoinfhi" id="elh9" onclick="show(16)">
-                <figure>
-                    <figcaption id="data17">(1999-1999)</figcaption>
-                    <figcaption id="nome17">Albert Einstein</figcaption>
-                    <img id="img17">
-                </figure>
-            </div>
-            <div class="elementoinfhi" id="elh10" onclick="show(17)">
-                <figure>
-                    <figcaption id="data18">(1999-1999)</figcaption>
-                    <figcaption id="nome18">Albert Einstein</figcaption>
-                    <img id="img18">
-                </figure>
-            </div>
-            <div class="elementoinfhi" id="elh11" onclick="show(18)">
-                <figure>
-                    <figcaption id="data19">(1999-1999)</figcaption>
-                    <figcaption id="nome19">Albert Einstein</figcaption>
-                    <img id="img19">
-                </figure>
-            </div>
-            <div class="elementoinfhi" id="elh12" onclick="show(19)">
-                <figure>
-                    <figcaption id="data20">(1999-1999)</figcaption>
-                    <figcaption id="nome20">Albert Einstein</figcaption>
-                    <img id="img20">
-                </figure>
-            </div>
-        </div>  
-    </div>
-    <br><br>
-    <footer>
-        <div class="equipe">
-            <h4>Equipe</h4>
-            <p>Callyel Nunes</p>
-            <p>Jhônatan Izidro</p>
-            <p>José Vinicius</p>
-            <p>Weberton Fernandes</p>
-        </div>
-        <div class="referencias">
-            <h4>Referências</h4>
-            <p>ARANHA, Ma Lúcia Aranha; MARTINS, Ma Helena Pires.
-                <b>Filosofando:</b> uma introdução a Filosofia. São Paulo:
-                Moderna, 2000.
-            </p>
-            <p>
-                ANDRADE, Eder. História da Computação. <b>Pet News</b>, 2013. Disponivel em: <a href="http://www.dsc.ufcg.edu.br/~pet/jornal/marco2014/materias/historia_da_computacao.html" target="_blank">http://www.dsc.
-                    ufcg.edu.br/~pet/jornal/
-                    marco2014/
-                    materias/
-                    historia_da_
-                    computacao.html</a> . Acesso em: 23 mar. 2021.
-            </p>
-            <p>
-                E-CÁLCULO. Georger Boole (1815 - 1864). <b>E-Cálculo</b>, 2012. Disponivel em: <a href="http://ecalculo.if.usp.br/historia/boole.htm" target="_blank">http://ecalculo.
-                    if.usp.br/historia/
-                    boole.htm</a> .  Acesso em: 23 mar. 2021.
-            </p>
-            <p>
-                FONTURA, Paula Renata. Alan Turing, o pai da computação. <b> In vivo</b>. Disponível em: <a href="http://www.invivo.fiocruz.br/cgi/cgilua.exe/sys/start.htm?infoid=1370&sid=7" target="_blank">http://www.invivo.
-                    fiocruz.br/cgi/cgilua.exe/
-                    sys/start.htm?infoid=1370&sid=7</a>. Acesso em: 23 mar. 2021.
-            </p>
-            <p>
-                COLETIVO MINA,Irmã Mary Kenneth Keller. <b> Coletivo Mina</b>, 2018. Diponível em: <a href="https://pesquisa.ufabc.edu.br/lirte/coletivo_mina/personalidades-femininas/irma-mary-kenneth-keller/" target="_blank">https://pesquisa.ufabc.
-                    edu.br/lirte/coletivo_mina/personalidades-femininas/irma-mary-kenneth-keller/</a>. Acesso em: 23 mar. 2021.
-            </p>
-            <p>
-                PORTOSIL, Claude Shannon, o pai do bit. <b> Portosil</b>, 04 de set. 1997. Disponível em: <a href="http://www.mat.ufrgs.br/~portosil/passa1c.html" target="_blank">http://www.mat.ufrgs.br
-                    /~portosil/passa1c.html</a>. Acesso em: 23 mar. 2021.
-            </p>
-            <p>
-                COMPUTER HISTORY MUSEUM,John Backus Companheiro de 1997. <b>Computer History Museum</b>, 2020. Disponível em: <a href="https://computerhistory.org/profile/john-backus/" target="_blank">https://computerhistory.
-                    org/profile/john-backus/</a>. Acesso em: 23 mar. 2021.
-            </p>
-            <p>
-                COURT, Rene. Karen Spärck Jones. <b> The Centre for Computing History</b>.  Disponível em: <a href="http://www.computinghistory.org.uk/det/45798/Karen-Sp-rck-Jones/" target="_blank">http://www.computing
-                    history.org.uk/det/45798/Karen-Sp-rck-Jones/</a>. Acesso em: 23 mar. 2021
-            </p>
-            <p>
-                BBC, História: Tim Berners Lee. <b> BBC</b>, 2014.Disponivel em: <a href="http://www.bbc.co.uk/history/historic_figures/berners_lee_tim.shtml" target="_blank">http://www.bbc.co.uk/
-                    history/historic_figures
-                    /berners_lee_tim.shtml</a> . Acesso em: 23 mar. 2021.
-            </p>
-        </div>
-        <div class="ficheiro">
-            <img src="./imgs/ficheiro.png" width="100" height="100" alt="">
-        </div>
-        <div class="footerh3">
-            <h3>Linha do Tempo da Ciência &copy;</h3>
-        </div>
+    <footer id="contato">
+      <div class="equipe">
+        <h4>Desenvolvedores:</h4><br>
+        Callyel Nunes <br>
+        Jhônatan Izidro <br>
+        José Vinicius <br>
+        Weberton Fernandes
+      </div>
+      
+     <div class="email">
+       <h4>Email:</h4>
+      <a href="">aglomerometro.suporte@email.com</a>  
+     </div>
+      <div class="copy">
+        <p>&copy; Aglomerômetro 2021</p>
+      </div>
     </footer>
 
-</body>  
-</html>  
+    <script src="script.js"></script>
+  </body>
+</html>
