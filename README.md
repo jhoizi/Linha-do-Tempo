@@ -1,7 +1,7 @@
 # Linha-do-Tempo
 
 
-Projeto da Universidade.
+Projeto realizado para ser apresentado na Universidade Estadual da Paraíba (UEPB).
 
 Site informativo desenvolvido com o intuito de apresentar uma pequena parte da linha do tempo da ciência. 
 
